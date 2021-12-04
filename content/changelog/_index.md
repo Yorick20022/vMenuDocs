@@ -5,6 +5,26 @@ weight: 70
 
 ----------------
 
+## vMenu v3.5.0 (December 4 2021)
+
+Thanks for all the community provided pull requests ❤️! It's great to see that people are still interested in keeping this resource up to date.
+This update contains mainly bug fixes and performance improvements, as well as the latest DLC vehicles.
+
+### Changes
+- Fix: Default Radio Station typo ([PR #256](https://github.com/TomGrobbe/vMenu/pull/256)).
+- Fix: Various permission bugs regarding staff only mode. This was caused by some performance improvements I've made in the past, in combination with server owners who setup their permissions in a way that non-staff players still had access to some of the menu's functions, but weren't allowed to access it because of their missing staff permission. This caused some tick functions to crash, resulting in a severe loss of performance. Note: None of this resulted in players being able to access things they shouldn't have access to. It just caused crashes and performance issues.
+- Fix: Some internal calls weren't awaited when spawning vehicles.
+- Fix: Fix instructional buttons not scaling to >16:9 resolutions ([PR #259](https://github.com/TomGrobbe/vMenu/pull/259)).
+- Fix: Use correct female inheritance for MP peds ([PR #261](https://github.com/TomGrobbe/vMenu/pull/261)).
+- Fix: Fix faraway spectate teleporting/GPS routes ([PR #262](https://github.com/TomGrobbe/vMenu/pull/262)).
+- Improvement: Improve performance for players that aren't allowed to use vMenu at all (ie with the staff only setting). Instead of 0.3-0.4ms it should now idle around 0.1ms for those people.
+- Improvement: Updated server/client dependencies again, it's been a while!
+- New: Add missing DLC vehicles ([PR #258](https://github.com/TomGrobbe/vMenu/pull/258)).
+- New: Add confirmation prompt for replacing saved vehicle ([PR #263](https://github.com/TomGrobbe/vMenu/pull/263)).
+- Removed: Remove SetClockDate(). This function recently started to cause issues due to a GTA V bug. For some people this caused massive FPS drops, this change should solve that. More info [here](https://discord.com/channels/192358910387159041/455024366091108352/916720155491459123).
+
+----------------
+
 ## vMenu v3.4.0 (May 25 2021)
 
 ### Pull requests
@@ -44,6 +64,7 @@ weight: 70
 - Added `vmenu_disable_player_stats_setup` to prevent vMenu from setting any player stats like stamina, shooting, driving ability, etc.
 - Added `vmenu_enable_snow` to manually enable snow on the ground without having the 'xmas' weather type selected.
 
+----------------
 
 ## vMenu v3.3.1 (November 1 2020)
 
