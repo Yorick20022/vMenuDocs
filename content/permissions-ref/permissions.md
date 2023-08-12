@@ -104,10 +104,11 @@ weight: 41
 |`vMenu.VehicleOptions.Delete`|Allows you to delete your current vehicle.|Allowed|
 |`vMenu.VehicleOptions.Underglow`|Allows you to access the vehicle underglow options submenu.|Allowed|
 |`vMenu.VehicleOptions.FlashHighbeamsOnHonk`|Allows you to enable/disable the 'Flash highbeams on Honk' option.|Allowed|
-|`vMenu.VehicleOptions.DisableTurbulence`|Allows you to disable plane turbulence. Only works for planes.|Allowed|
+|`vMenu.VehicleOptions.DisableTurbulence`|Allows you to disable plane and helicopter turbulence.|Allowed|
 |`vMenu.VehicleOptions.FixOrDestroyTires`|Allows you to use the tire fix/destroy list option to fix or destroy specific vehicle tires through the menu.|Allowed|
 |`vMenu.VehicleOptions.Flares`|Unused for now.|N/A|
 |`vMenu.VehicleOptions.PlaneBombs`|Unused for now.|N/A|
+|`vMenu.VehicleOptions.DestroyEngine`|Allows the player to destroy their engine.|Allowed|
 
 ## Vehicle Spawner
 
@@ -163,6 +164,7 @@ weight: 41
 |`vMenu.PersonalVehicle.SoundHorn`|Allows you to remotely sound the horn for 1 second. Fucks up if you’re inside the vehicle, so only use it whenever you’re outside of the vehicle for the best effect.|Allowed|
 |`vMenu.PersonalVehicle.ToggleAlarm`|Remotely toggles the alarm on/off.|Allowed|
 |`vMenu.PersonalVehicle.ExclusiveDriver`|Allows you to be the exclusive driver of the vehicle, preventing other players from getting into the driver's seat.|Allowed|
+|`vMenu.PersonalVehicle.ToggleStance`|Allows you to toggle your vehicle stance.|Allowed|
 
 ## Player Appearance
 

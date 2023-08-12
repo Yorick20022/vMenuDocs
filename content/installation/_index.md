@@ -22,14 +22,12 @@ If you're updating vMenu, instead of installing it from scratch, you need to mak
 {{% notice note%}}
 If you're trying to join the server, and it gives you an error saying "Could not load resource vMenu" or something similar, then make sure that you've installed vMenu inside `/resources/vMenu/` and NOT inside `/resources/vMenu/vMenu/`! Also note that the resource folder name **MUST** be called `vMenu` (Case Sensitive!!!) or the script will not work.
 {{% /notice %}}
-3. Now that you've got your files inside `/resources/vMenu/`, go into the `/resources/vMenu/config/` folder and move (or copy) the `permissions.cfg` file to the _same_ folder where your `server.cfg` file is located.
+3. Now that you've got your files inside `/resources/vMenu/`, go into the `/resources/vMenu/config/` folder and edit the `permissions.cfg` file to your liking.
+4. Go to your `server.cfg` file, and add `exec @vMenu/config/permissions.cfg` **ABOVE** the `ensure vMenu` line (add `ensure vMenu` if you haven't done that already). It's very important that you FIRST execute the permissions file, and THEN start/ensure vMenu. Otherwise vMenu will not function correctly!
 {{% notice tip%}}
-If you're using ZAP Hosting, you might want to leave the permissions.cfg file inside the config folder, and use `exec resources/vMenu/config/permissions.cfg` instead of `exec permissions.cfg` in step 4.
 <br><br>Alternatively, if you don't want to mess with any of these installation steps, install vMenu using their one-click installer! Don't have a FiveM server yet? Click [here](https://zap-hosting.com/vespura2) to get a server, and use the code `Vespura-a-3715` at checkout for a 10% discount!
 {{% /notice %}}
-4. Go to your `server.cfg` file, and add `exec permissions.cfg` at the _very top_ of the file (use the other command explained in step 3 if you're using Zap Hosting).
-5. Now, add `start vMenu` somewhere inside your server.cfg file, position doesn't matter as long as it's _below_ the `exec permissions.cfg` line.
-6. Save the server.cfg file and start your server. Once you're in, you should be able to access most menu's just fine without having to configure anything inside the permissions.cfg. This is because it is setup to have certain permissions for everyone by default, only administrator/moderator sensitive options have been removed from the default permissions file.
+5. Save the server.cfg file and start your server. Once you're in, you should be able to access most menu's just fine without having to configure anything inside the `permissions.cfg`. This is because it is setup to have certain permissions for everyone by default, only administrator/moderator sensitive options have been removed from the default permissions file.
 
 Congratulations, you've just installed vMenu in it's most basic, plug-and-play configuration.
 

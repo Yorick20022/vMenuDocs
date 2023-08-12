@@ -5,6 +5,81 @@ weight: 70
 
 ----------------
 
+## vMenu v3.6.0 (August 12 2023)
+
+Thanks for all the community provided pull requests ❤️!
+Special thanks to everyone who helped test this release, and to [Golden](https://github.com/XdGoldenTigerOfficial) for doing a lot of community PR reviews and merges!
+
+This update contains mainly bug fixes, some small new features.
+The latest DLC vehicles, peds and weapons should now also be included.
+
+### Permission changes
+- New permission: `vMenu.VehicleOptions.DestroyEngine`, default for `builtin.everyone`: `allow`. Allows the player to destroy their engine in the Vehicle Options menu, from the Vehicle Options.
+- New permission: `vMenu.PersonalVehicle.ToggleStance`, default for `builtin.everyone`: `allow`. Allows the player to toggle vehicle stance (for supported vehicles only), from the Personal Vehicle menu.
+- New weapon permissions, all allowed by default to `builtin.everyone`:
+  - `vMenu.WeaponOptions.HazardCan`
+  - `vMenu.WeaponOptions.EMPLauncher`
+  - `vMenu.WeaponOptions.HeavyRifle`
+  - `vMenu.WeaponOptions.FertilizerCan`
+  - `vMenu.WeaponOptions.StunGunMP`
+  - `vMenu.WeaponOptions.PrecisionRifle`
+  - `vMenu.WeaponOptions.TacticalRifle`
+  - `vMenu.WeaponOptions.PistolXM3`
+  - `vMenu.WeaponOptions.CandyCane`
+  - `vMenu.WeaponOptions.RailgunXM3`
+  - `vMenu.WeaponOptions.AcidPackage`
+  - `vMenu.WeaponOptions.TecPistol`
+
+### Config changes
+- New setting `keep_player_head_props`: Sets whether or not players can lose their head props when they are hit/pushed.
+  > Default setting: `setr keep_player_head_props true`
+
+  Possible Values:
+  - `true` Props will stay on player (default vMenu and GTA Online behavior)
+  - `false` vMenu will not touch this feature, by default this means that head props will fall off when the player is hit, which is the default behavior for GTA V Single Player peds.
+
+- New setting `vmenu_using_chameleon_colours`: Allows the use of chameleon colors for supported vehicles.
+  > Default setting: `setr vmenu_using_chameleon_colours false`
+
+  **Important**: You must be streaming the chameleon colours in order for this to function properly (if the current DLC version of your server does not provide them already).
+
+  Possible Values:
+  - `true` Enable the chameleon colour vehicle paints category in the primary colours menu.
+  - `false` chamelon colors will not be available in the menu.
+
+### Changes
+Here's a list of all the changes in this update.
+
+#### Fixes
+- Fix: NewLoadSceneStart now stops in the teleport method. ([PR #287 by QuadrupleTurbo](https://github.com/TomGrobbe/vMenu/pull/287)).
+- Fix: `STREAMER216` name typo. ([PR #306 By MichaelCoding25](https://github.com/TomGrobbe/vMenu/pull/306)).
+
+#### Improvements
+- Improved: Better performance of Location Display (PLD). ([PR #252 by DevBlocky](https://github.com/TomGrobbe/vMenu/pull/252)).
+
+#### New features
+- New: Added new content from The Criminal Enterprises, The Contract and LS Drug Wars DLCs (mpsum2, mpsecurity, mpchristmas3). ([PR #290 by MichaelCoding25](https://github.com/TomGrobbe/vMenu/pull/290)).
+  <br>This PR also includes:
+  - Added low grip tires option
+  - Added new destroy vehicle engine option
+  - Added new vehicle stance option
+  - Update outdated native names
+  - Fixed unlimited ammo description typo
+  - Fixed unlimited ammo perms
+- New: Added new content from San Andreas Mercenaries (mp2023_01) DLC. ([PR #303 by MichaelCoding25](https://github.com/TomGrobbe/vMenu/pull/303))
+- New: Added gallery options to Recording Options submenu. ([PR #274 by freedy69](https://github.com/TomGrobbe/vMenu/pull/274)).
+- New: Added Chameleon Colours for supporting vehicles. ([Direct contribution by Golden](https://github.com/TomGrobbe/vMenu/commits?author=XdGoldenTigerOfficial)).
+- New: Added 'No Helicopter Turbulence' option in the Vehicle Options menu (this uses the permission of NoPlaneTurbulence). (New feature by Vespura).
+- New: Added 'Keep Player Head Props' setting that will allow players to keep their head props stay attached if the player is hit or pushed. (New feature by Vespura).
+
+#### Other changes
+- Cleaned up the code, and made some readme/license changes.
+- Updated the CitizenFX client/server libraries.
+- Deleted the old GitHub Issues Template for feature request.
+
+
+----------------
+
 ## vMenu v3.5.0 (December 4 2021)
 
 Thanks for all the community provided pull requests ❤️! It's great to see that people are still interested in keeping this resource up to date.

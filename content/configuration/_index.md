@@ -51,6 +51,8 @@ setr vmenu_option_name value
 |`vmenu_handle_invisibility`|`true` / `false`|Prevent vMenu from setting the player's invisibility every frame. Useful if you have other resources that want to override vMenu's player invisibility option.|
 |`vmenu_disable_player_stats_setup`|`true` / `false`|Prevent vMenu from setting any player stats like stamina, shooting, driving ability, etc.|
 |`vmenu_enable_snow`|`true` / `false`|Manually enable snow on the ground without having the 'xmas' weather type selected.|
+|`vmenu_using_chameleon_colours`|`true` / `false`|Allows the use of chameleon colors for supported vehicles. (Default: `false`)|
+|`keep_player_head_props`|`true` / `false`|Sets whether or not players can lose their head props when they are hit/pushed. (Default `true`)|
 
 ## Appreciate my work?
 Consider supporting me on [<i class='fab fa-patreon'></i> Patreon](https://www.patreon.com/vespura)!
